@@ -10,6 +10,113 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+
+ /* *{
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+   font-family: 'Poppins', sans-serif;
+ } */
+
+ ul > li {
+    margin-left: 20px;
+}
+
+ body{
+   min-height:100vh;
+   background:#eee;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+ }
+ .cards {
+   display:flex;
+   flex-wrap:wrap;
+   gap:20px;
+   justify-content:center;
+     margin: 20px 0;
+ }
+ .card{
+   position:relative;
+   width:280px;
+   padding:30px;
+   border-radius:3px;
+   background:#fff;
+   cursor:pointer;
+   transition:.2s ease-in-out;
+ }
+ .card .card_title{
+   display:flex;
+   justify-content:space-between;
+   align-items:center;
+   margin-bottom:10px;
+ }
+ .card .card_title span{
+   background:#325ea8;
+   border-radius:3px;
+   font-size:14px;
+   padding:5px 10px;
+   text-transform:capitalize;
+   color:#fff;
+ }
+ .card .card_content{
+   color:gray;
+   margin-bottom:15px;
+ }
+ .card .card_action {
+   display:flex;
+   flex-direction:column;
+ }
+ .card .card_action .tags {
+   display:flex;
+   gap:6px;
+   margin-top:10px;
+   flex-wrap:wrap;
+ }
+ .card .card_action .tags span{
+   background: #d7dbe0;
+   border-radius:3px;
+   padding:5px 10px;
+   font-size: 12px;
+ }
+ .card .card_action .tags span:hover{
+   background:#c5d9fa;
+ }
+ .card .buttons{
+   display:flex;
+   justify-content:space-between;
+   margin-top:15px;
+ }
+ .card .buttons i {
+   font-size:18px;
+ }
+ .card .buttons .btn{
+   background: gray;
+   padding:5px 15px;
+   border:none;
+   border-radius:4px;
+   color:#fff;
+   transition: .5s ease-out;
+   /* visibility:hidden; */
+   pointer-event:none;
+ }
+ .card:hover{
+   box-shadow:2px 6px 8px rgba(255,255,255,.4),2px 4px 8px rgba(0,0,0,.2);
+ }
+ .card:hover .btn {
+   visibility:visible;
+   pointer-event:auto;
+ }
+
+ .divider {
+   border-bottom:1px solid rgba(0,0,0,.1);
+   margin-bottom:10px;
+ }
+
+
+/**/
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -5046,7 +5153,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .list-group {
-  display: flex;
+  display: inline-block;
   flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
@@ -6124,7 +6231,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #160D0B !important;
+  background-color: #374f6d !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
